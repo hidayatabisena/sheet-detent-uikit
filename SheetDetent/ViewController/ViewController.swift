@@ -37,16 +37,19 @@ class ViewController: UIViewController {
                 // sheet.detents = [.medium(), .large()]
                 
                 // custom sheet detents size
-                sheet.detents = [
-                    .custom { _ in
-                        return 200
-                    },
-                    .custom { context in
-                        return context.maximumDetentValue * 0.6
-                    },
-                    .medium(),
-                    .large()
-                ]
+                //                sheet.detents = [
+                //                    .custom { _ in
+                //                        return 200
+                //                    },
+                //                    .custom { context in
+                //                        return context.maximumDetentValue * 0.6
+                //                    },
+                //                    .medium(),
+                //                    .large()
+                //                ]
+                sheet.detents = [.custom(resolver: { context in
+                    0.1 * context.maximumDetentValue
+                }), .large()]
                 sheet.preferredCornerRadius = 24
                 sheet.prefersGrabberVisible = true
                 sheet.prefersScrollingExpandsWhenScrolledToEdge = false
