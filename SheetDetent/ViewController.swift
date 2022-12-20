@@ -50,8 +50,11 @@ class ViewController: UIViewController {
                 sheet.preferredCornerRadius = 24
                 sheet.prefersGrabberVisible = true
                 sheet.prefersScrollingExpandsWhenScrolledToEdge = false
-                sheet.largestUndimmedDetentIdentifier = .medium
+                // sheet.largestUndimmedDetentIdentifier = .medium
             }
+            
+            guard self.itemsTVC.presentedViewController == nil else { return }
+            guard self.itemsTVC.isBeingPresented == false else { return }
             
             self.present(self.itemsTVC, animated: true, completion: nil)
         })
