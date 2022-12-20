@@ -47,6 +47,7 @@ class ViewController: UIViewController {
                     .medium(),
                     .large()
                 ]
+                sheet.preferredCornerRadius = 24
                 sheet.prefersGrabberVisible = true
                 sheet.prefersScrollingExpandsWhenScrolledToEdge = false
                 sheet.largestUndimmedDetentIdentifier = .medium
