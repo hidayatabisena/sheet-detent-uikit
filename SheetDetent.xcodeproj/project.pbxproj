@@ -13,6 +13,7 @@
 		5358AEAF2951419D00E140F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5358AEAE2951419D00E140F5 /* Assets.xcassets */; };
 		5358AEB22951419D00E140F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5358AEB02951419D00E140F5 /* LaunchScreen.storyboard */; };
 		5358AEBA29514B6600E140F5 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358AEB929514B6600E140F5 /* ItemsTableViewController.swift */; };
+		53676A5C2951872500BB3CC3 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53676A5B2951872500BB3CC3 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5358AEB12951419D00E140F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5358AEB32951419D00E140F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5358AEB929514B6600E140F5 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		53676A5B2951872500BB3CC3 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		5358AEA42951419B00E140F5 /* SheetDetent */ = {
 			isa = PBXGroup;
 			children = (
+				53676A5A295186AB00BB3CC3 /* ViewController */,
 				5358AEA52951419B00E140F5 /* AppDelegate.swift */,
 				5358AEA72951419B00E140F5 /* SceneDelegate.swift */,
-				5358AEA92951419B00E140F5 /* ViewController.swift */,
-				5358AEB929514B6600E140F5 /* ItemsTableViewController.swift */,
 				5358AEAE2951419D00E140F5 /* Assets.xcassets */,
 				5358AEB02951419D00E140F5 /* LaunchScreen.storyboard */,
 				5358AEB32951419D00E140F5 /* Info.plist */,
 			);
 			path = SheetDetent;
+			sourceTree = "<group>";
+		};
+		53676A5A295186AB00BB3CC3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5358AEB929514B6600E140F5 /* ItemsTableViewController.swift */,
+				5358AEA92951419B00E140F5 /* ViewController.swift */,
+				53676A5B2951872500BB3CC3 /* HomePageViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 				5358AEAA2951419B00E140F5 /* ViewController.swift in Sources */,
 				5358AEA62951419B00E140F5 /* AppDelegate.swift in Sources */,
 				5358AEBA29514B6600E140F5 /* ItemsTableViewController.swift in Sources */,
+				53676A5C2951872500BB3CC3 /* HomePageViewController.swift in Sources */,
 				5358AEA82951419B00E140F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
