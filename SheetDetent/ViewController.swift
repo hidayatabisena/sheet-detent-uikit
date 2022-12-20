@@ -43,7 +43,9 @@ class ViewController: UIViewController {
                     },
                     .custom { context in
                         return context.maximumDetentValue * 0.6
-                    }
+                    },
+                    .medium(),
+                    .large()
                 ]
                 sheet.prefersGrabberVisible = true
                 sheet.prefersScrollingExpandsWhenScrolledToEdge = false
